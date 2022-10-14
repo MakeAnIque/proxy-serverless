@@ -7,6 +7,11 @@ const proxy = httpProxy.createProxyServer();
 app.use(cors());
 
 app.disable("x-powered-by");
+
+app.get((req , res) => {
+res.send("hello working")
+})
+
 app.use(function (req, res) {
   proxy.web(req, res, {
     target: "http://92.204.128.4:4000",
