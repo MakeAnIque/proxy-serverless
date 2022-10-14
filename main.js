@@ -12,6 +12,6 @@ app.use(function (req, res) {
     target: "http://92.204.128.4:4000",
   });
 });
-app.listen(process.env.PORT, () => {
-  console.log("server is listening on port", process.env.PORT);
+app.listen(3000, () => {
+  console.log("server is listening on port", 3000);
 });
