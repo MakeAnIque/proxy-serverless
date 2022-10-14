@@ -12,7 +12,7 @@ app.get("/hello",(req , res) => {
 res.send("hello working")
 })
 
-app.use("*", function (req, res) {
+app.get("/platform/twitter/user-detail-by-userid/:user", function (req, res) {
   proxy.web(req, res, {
     target: "http://92.204.128.4:4000",
   });
