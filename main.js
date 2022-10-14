@@ -8,7 +8,7 @@ app.use(cors());
 
 app.disable("x-powered-by");
 
-app.get((req , res) => {
+app.get("hello",(req , res) => {
 res.send("hello working")
 })
 
